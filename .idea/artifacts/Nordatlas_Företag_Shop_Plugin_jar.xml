@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Nordatlas Företag Shop Plugin:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Nordatlas_Företag_Shop_Plugin_jar</output-path>
+    <root id="archive" name="Nordatlas Företag Shop Plugin.jar">
+      <element id="module-output" name="Nordatlas Företag Shop Plugin" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../spigot-1.17.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

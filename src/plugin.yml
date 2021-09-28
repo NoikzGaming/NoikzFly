@@ -1,0 +1,12 @@
+name: Company
+version: 1.0.0
+main: me.noikzgaming.companyshops.Main
+api-version: 1.14
+
+commands:
+  company:
+    description: Opens the company menu!
+    usage: /<command>
+    aliases: []
+  company create:
+    description: Create your company!
