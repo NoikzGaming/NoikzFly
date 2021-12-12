@@ -1,12 +1,14 @@
-name: Company
+name: NoikzFly
 version: 1.0.0
-main: me.noikzgaming.companyshops.Main
-api-version: 1.14
+main: me.noikzgaming.noikzfly.Main
+api-version: 1.17
 
 commands:
-  company:
-    description: Opens the company menu!
+  fly:
+    description: Makes you fly!
     usage: /<command>
     aliases: []
-  company create:
-    description: Create your company!
+  noikzfly:
+    description: The main command of NoikzFly.
+    usage: /<command>
+    aliases: []

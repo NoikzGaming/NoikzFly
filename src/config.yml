@@ -1,0 +1,7 @@
+no-permission-message: "You don`t have permission to execute this command!"
+no-subcommand-provided: "You need to provide a subcommand!"
+reload-message: "Config has been reloaded!"
+prefix: "&6&lNoikzFly &7> "
+fly-off-message: "Fly Mode unactivated"
+fly-on-message: "Fly Mode activated"
+only-players-can-execute: "Only players can execute this command!"
