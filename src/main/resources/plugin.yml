@@ -15,4 +15,4 @@ commands:
   flyspeed:
     description: Changes your flight speed.
     usage: /<command>
-    aliases: []
+    aliases: [ ]
