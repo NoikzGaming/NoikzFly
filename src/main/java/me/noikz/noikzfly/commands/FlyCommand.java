@@ -1,5 +1,6 @@
 package me.noikz.noikzfly.commands;
 
+//import me.noikz.noikzfly.DataFile;
 import me.noikz.noikzfly.Main;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -36,11 +37,14 @@ public class FlyCommand implements CommandExecutor {
         if (list_of_flying_players.contains(player)){
             list_of_flying_players.remove(player);
             player.setAllowFlight(false);
+            //DataFile.get().set(player.getUniqueId() + ".flyOn", false);
+            //DataFile.save();
             player.sendMessage(ChatColor.translateAlternateColorCodes('&', config.getString("prefix") + FlyOffMessage + config.getString("fly-off-message")));
-        } else if (!list_of_flying_players.contains(player)) {
+        } else {
             list_of_flying_players.add(player);
             player.setAllowFlight(true);
-            player.setFlying(true);
+            //DataFile.get().set(player.getUniqueId() + ".flyOn", true);
+            //DataFile.save();
             player.sendMessage(ChatColor.translateAlternateColorCodes('&', config.getString("prefix") + FlyOnMessage + config.getString("fly-on-message")));
         }
      }

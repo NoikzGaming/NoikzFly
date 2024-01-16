@@ -30,11 +30,11 @@ public class NoikzFlyCommand implements CommandExecutor {
             if (args.length > 0) {
                 if (args[0].equalsIgnoreCase("reload")) {
                     if (!sender.hasPermission("noikzfly.reload")) {
-                        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', config.getString("prefix") + ErrorMessage + config.getString("no-permission-message")));
+                        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', config.getString("prefix") + ErrorMessage + "You don`t have permission to execute this command!"));
                         return true;
                     } else if (sender.hasPermission("noikzfly.reload")) {
                         config = YamlConfiguration.loadConfiguration(Main.plugin.cfile);
-                        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', config.getString("prefix") + ReloadedMessage + config.getString("reload.message")));
+                        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', config.getString("prefix") + ReloadedMessage + "Config reloaded"));
                     }
                 }
             }
